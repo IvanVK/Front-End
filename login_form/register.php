@@ -9,12 +9,15 @@
 		if($password == $password_two){
 			$query = "INSERT INTO logg (username, password, password_two, email) VALUES ('" . $_POST['username'] . "', '" . $_POST['password'] . "', '" . $_POST['password_two'] . "', '" . $_POST['email'] . "')";
 			$result = mysql_query($query);
-			echo "TestTestTest";
+			//echo "TestTestTest";
 			if($result){
-				echo "Account created!";
+				echo "Account created!<br>";
+				echo"<a href='login_form.html'>Now you can login</a>";
+
 			}
 			else{
 				echo("Account not created!");
+
 			}
 		}
 		else{

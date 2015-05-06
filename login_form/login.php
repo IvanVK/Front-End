@@ -21,6 +21,7 @@
 	if(isset($_SESSION['username'])){
 		$username = $_SESSION['username'];
 		echo "\n hello ".$username." ";
+		echo"<a href='logout.php'><br>logout!<a/>";
 	}
 	else{}
 
